@@ -1,0 +1,85 @@
+ /* Teeman värit tulevat muuttujista, joten vaihtaminen on helppoa. */
+        :root {
+            --background: #eef6ff;
+            --surface: #ffffff;
+            --text: #16324f;
+            --accent: #087f8c;
+            --accent-text: #ffffff;
+        }
+
+        [data-theme="sunset"] {
+            --background: #fff1e6;
+            --surface: #ffffff;
+            --text: #4b2538;
+            --accent: #d65a31;
+            --accent-text: #ffffff;
+        }
+
+        [data-theme="forest"] {
+            --background: #edf5ed;
+            --surface: #ffffff;
+            --text: #1f3b2d;
+            --accent: #367c55;
+            --accent-text: #ffffff;
+        }
+
+        /* Tumma teema vaihtaa myös kortin ja tekstin värit kontrastin säilyttämiseksi. */
+        [data-theme="dark"] {
+            --background: #121820;
+            --surface: #202b36;
+            --text: #f2f6f8;
+            --accent: #4db6ac;
+            --accent-text: #10201f;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            background: var(--background);
+            color: var(--text);
+            font-family: "Trebuchet MS", sans-serif;
+            transition: background 200ms ease, color 200ms ease;
+        }
+
+        main {
+            width: min(90%, 620px);
+            padding: 2rem;
+            text-align: center;
+            background: var(--surface);
+            border: 3px solid var(--accent);
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(22, 50, 79, 0.12);
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        button,
+        select {
+            margin: 0.35rem;
+            padding: 0.65rem 0.9rem;
+            border: 2px solid var(--accent);
+            border-radius: 6px;
+            background: var(--accent);
+            color: var(--accent-text);
+            font: inherit;
+            cursor: pointer;
+        }
+
+        select {
+            background: var(--surface);
+            color: var(--text);
+        }
+
+        button:hover,
+        select:hover {
+            filter: brightness(1.1);
+        }
+
+        #root {
+            min-height: 2rem;
+            margin-top: 1rem;
+        }
