@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong Fury</title>
+</head>
+<body>
+    <center>
+    <h1>Ping Pong Fury Game</h1>
+    
+    <button>Downloads</button>
+    <button onclick="history()">History of PPF</button>
+    <button onclick="support()">Support</button>
+
+    <div id="root"></div>
+
+    </center>
+
+     <script>
+
+              function support() {
+                const x = `<p>Call +28298292828 or email: oicoico@dij.fi </p>`
+
+                document.getElementById("root").innerHTML = x
+            }
+
+            function history() {
+                const x = `<p>Ping Pong on kehitetty 
+                    vuonna 2026 Careeria koulun oppitunnilla</p>`
+
+                document.getElementById("root").innerHTML = x
+            }
+
+
+            alert("Tervetuloa! Nyt on " + new Date())
+
+
+    </script>
+
+</body>
+</html>
