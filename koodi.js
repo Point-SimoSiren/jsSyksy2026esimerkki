@@ -9,6 +9,7 @@
                 document.documentElement.dataset.theme = selectedTheme === "default" ? "" : selectedTheme
             })
 
+        
             //Tähän voi lisätä downloads() funktion itse
 
               function support() {
